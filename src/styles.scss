@@ -7,7 +7,7 @@ p {
 }
 
 .top-bar {
-  background-color: rgba(51,51,51,0.9);
+  background-color: rgba(81, 4, 223, 0.9);
   color: white;
   box-shadow: 0 0 10px rgba(51,51,51,0.6);
   margin-bottom: 1rem;
@@ -30,12 +30,16 @@ p {
   vertical-align: bottom;
 
   &.success {
-    background-color: #5D8B00;
+    background-color: #6716f4cf;
     padding: 1rem 3rem;
     color: #fff;
-
-    &:hover {
+    transition: 0.2s all;
+    &:hover,&:focus,:active {
       color: #fff;
+      background-color: #5d00fdf6;
     }
   }
+}
+.button.disabled.success, .button.disabled.success:focus, .button.disabled.success:hover, .button[disabled].success, .button[disabled].success:focus, .button[disabled].success:hover{
+  background:#6716f4cf;
 }
